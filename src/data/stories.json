@@ -6,7 +6,9 @@
                 "username": "9gustin",
                 "imageUrl": "https://picsum.photos/400/900"
             },
-            "imageUrl": "https://picsum.photos/400/900"
+            "imageUrl": "https://picsum.photos/400/900",
+            "relevance": 1,
+            "createdAt":"2020-11-26T18:13:04.334Z"
         },
         {
             "id": "1",
@@ -14,7 +16,9 @@
                 "username": "9gustin",
                 "imageUrl": "https://picsum.photos/400/900"
             },
-            "imageUrl": "https://picsum.photos/400/900"
+            "imageUrl": "https://picsum.photos/400/900",
+            "relevance": 1,
+            "createdAt":"2020-11-26T19:13:04.334Z"
         },
         {
             "id": "1",
@@ -22,7 +26,9 @@
                 "username": "9gustin",
                 "imageUrl": "https://picsum.photos/400/900"
             },
-            "imageUrl": "https://picsum.photos/400/900"
+            "imageUrl": "https://picsum.photos/400/900",
+            "relevance": 1,
+            "createdAt":"2020-11-26T20:13:04.334Z"
         },
         {
             "id": "1",
@@ -30,7 +36,9 @@
                 "username": "9gustin",
                 "imageUrl": "https://picsum.photos/400/900"
             },
-            "imageUrl": "https://picsum.photos/400/900"
+            "imageUrl": "https://picsum.photos/400/900",
+            "relevance": 1,
+            "createdAt":"2020-11-26T22:13:04.334Z"
         },
         {
             "id": "1",
@@ -38,7 +46,9 @@
                 "username": "9gustinardo",
                 "imageUrl": "https://picsum.photos/400/900"
             },
-            "imageUrl": "https://picsum.photos/400/900"
+            "imageUrl": "https://picsum.photos/400/900",
+            "relevance": 99,
+            "createdAt":"2020-11-26T23:13:04.334Z"
         },
         {
             "id": "1",
@@ -46,7 +56,9 @@
                 "username": "9gustinardo",
                 "imageUrl": "https://picsum.photos/400/900"
             },
-            "imageUrl": "https://picsum.photos/400/900"
+            "imageUrl": "https://picsum.photos/400/900",
+            "relevance": 1,
+            "createdAt":"2020-11-26T23:19:04.334Z"
         },
         {
             "id": "1",
@@ -54,7 +66,9 @@
                 "username": "userx",
                 "imageUrl": "https://picsum.photos/400/900"
             },
-            "imageUrl": "https://picsum.photos/400/900"
+            "imageUrl": "https://picsum.photos/400/900",
+            "relevance": 5,
+            "createdAt":"2020-11-26T18:13:04.334Z"
         }
     ]
 }

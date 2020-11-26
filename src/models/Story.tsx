@@ -6,5 +6,7 @@ interface User{
 export default interface Story{
     user: User,
     id: string,
-    imageUrl: string
+    imageUrl: string,
+    relevance: number,
+    createdAt: Date
 }
