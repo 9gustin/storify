@@ -16,9 +16,15 @@ const StoryReducer = (state: any, action: Action) => {
     }
 }
 
-//TODO: GET DATE
 const SortStories = (stories: Story[]): Story[] => {
-    return stories.sort((a, b) => (a.relevance - b.relevance));
+    return stories.sort((a, b) => {
+        if(a.relevance > b.relevance) return 1;
+        if(a.relevance < b.relevance) return -1;
+        if(a.createdAt > b.createdAt) return 1;
+        if(a.createdAt < b.createdAt) return -1;
+        
+        return -1;
+    });
 }
 
 export default StoryReducer;
