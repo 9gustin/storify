@@ -3,8 +3,9 @@
     margin: var(--distanceDefault);
     border-radius: 50%;
     overflow: hidden;
-    min-height:var(--imgSize);
+    height:var(--imgSize);
     min-width: var(--imgSize);
+    max-width: var(--imgSize);
     align-items: center;
     img{
         height: 100%;
