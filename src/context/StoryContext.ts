@@ -1,3 +1,4 @@
+//! deprecated: replaced for useStorify, testing and after this context will be removed
 
 import React from 'react';
 import { createContext } from "react";

@@ -6,10 +6,10 @@ import useStorify from './hooks/useStorify';
 import jsonStories from './data/stories.json';
 
 function App() {
-  const { stories } = useStorify(jsonStories.stories);
+  const { stories,setStories } = useStorify(jsonStories.stories);
 
   return (
-    <Storify imgSize="6rem" />
+    <Storify imgSize="6rem" stories={stories}/>
   );
 }
 

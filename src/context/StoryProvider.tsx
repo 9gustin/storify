@@ -1,3 +1,5 @@
+//! deprecated: replaced for useStorify, testing and after this context will be removed
+
 import { ReactNode, useReducer } from "react";
 import Story from "../models/Story";
 import StoryContext from "./StoryContext";
