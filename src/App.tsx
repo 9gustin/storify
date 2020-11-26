@@ -9,7 +9,7 @@ function App() {
   const { stories,setStories } = useStorify(jsonStories.stories);
 
   return (
-    <Storify imgSize="6rem" stories={stories}/>
+    <Storify stories={stories}/>
   );
 }
 

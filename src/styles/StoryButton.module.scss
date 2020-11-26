@@ -7,14 +7,19 @@
     min-width: var(--imgSize);
     max-width: var(--imgSize);
     align-items: center;
+    border: 4.5px solid var(--storyColor);
     img{
         height: 100%;
         width: 100%;
-        transition: transform .2s;
-        filter: blur(1px);
+        transition: transform .4s;
+        filter: blur(.5px);
         &:hover{
             transform: scale(1.05); 
-            filter: blur(0px);
+            filter: none;
+        }
+        &:active{
+            transform: scale(1.25); 
+            filter: none;
         }
     }
 }
