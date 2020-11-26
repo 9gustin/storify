@@ -1,12 +1,15 @@
 import React from 'react';
-import StorysLine from './components/StoriesLine';
-import storiesJSON from './data/stories.json';
 import 'normalize.css';
 import './styles/global.scss';
+import Storify from './components/Storify';
+import useStorify from './hooks/useStorify';
+import jsonStories from './data/stories.json';
 
 function App() {
+  const { stories } = useStorify(jsonStories.stories);
+
   return (
-    <StorysLine stories={storiesJSON.stories} imgSize="5rem"/>
+    <Storify imgSize="6rem" />
   );
 }
 
