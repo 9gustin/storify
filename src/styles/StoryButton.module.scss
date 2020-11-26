@@ -1,0 +1,19 @@
+.storyButton{
+    display: flex;
+    margin: var(--distanceDefault);
+    border-radius: 50%;
+    overflow: hidden;
+    min-height:var(--imgSize);
+    min-width: var(--imgSize);
+    align-items: center;
+    img{
+        height: 100%;
+        width: 100%;
+        transition: transform .2s;
+        filter: blur(1px);
+        &:hover{
+            transform: scale(1.05); 
+            filter: blur(0px);
+        }
+    }
+}

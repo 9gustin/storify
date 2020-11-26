@@ -1,0 +1,60 @@
+{
+    "stories": [
+        {
+            "id": "1",
+            "user": {
+                "username": "9gustin",
+                "imageUrl": "https://picsum.photos/400/900"
+            },
+            "imageUrl": "https://picsum.photos/400/900"
+        },
+        {
+            "id": "1",
+            "user": {
+                "username": "9gustin",
+                "imageUrl": "https://picsum.photos/400/900"
+            },
+            "imageUrl": "https://picsum.photos/400/900"
+        },
+        {
+            "id": "1",
+            "user": {
+                "username": "9gustin",
+                "imageUrl": "https://picsum.photos/400/900"
+            },
+            "imageUrl": "https://picsum.photos/400/900"
+        },
+        {
+            "id": "1",
+            "user": {
+                "username": "9gustin",
+                "imageUrl": "https://picsum.photos/400/900"
+            },
+            "imageUrl": "https://picsum.photos/400/900"
+        },
+        {
+            "id": "1",
+            "user": {
+                "username": "9gustinardo",
+                "imageUrl": "https://picsum.photos/400/900"
+            },
+            "imageUrl": "https://picsum.photos/400/900"
+        },
+        {
+            "id": "1",
+            "user": {
+                "username": "9gustinardo",
+                "imageUrl": "https://picsum.photos/400/900"
+            },
+            "imageUrl": "https://picsum.photos/400/900"
+        },
+        {
+            "id": "1",
+            "user": {
+                "username": "userx",
+                "imageUrl": "https://picsum.photos/400/900"
+            },
+            "imageUrl": "https://picsum.photos/400/900"
+        }
+    ]
+}

@@ -1,0 +1,14 @@
+.storiesLine {
+  padding: 0 var(--distanceDefault);
+  display: flex;
+  min-width: 100vw;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; //Chrome and Safari
+  }
+}
+.storiesLineContainer{
+    position: relative;
+}

@@ -1,0 +1,29 @@
+.iconPaginate {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display:flex;
+  align-items: center;
+  font-size: 1.5rem;
+  
+  &.prev {
+    left: var(--distanceDefault)
+  }
+  &.next {
+    right: var(--distanceDefault)
+  }
+  button{
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba($color: #fff, $alpha: .6);
+    transition: all .5s;
+    &:hover {
+      background-color: rgba($color: #fff, $alpha: .5);
+    }
+  }
+}
