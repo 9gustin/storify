@@ -1,12 +1,8 @@
-interface User{
-    username: string,
-    imageUrl: string
-}
+import User from "./User";
 
 export default interface Story{
     user: User,
     id: string,
     imageUrl: string,
-    relevance: number,
     createdAt: Date
 }
