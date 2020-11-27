@@ -1,25 +1,31 @@
-.storyButton{
-    display: flex;
-    margin: var(--distanceDefault);
-    border-radius: 50%;
-    overflow: hidden;
-    height:var(--imgSize);
-    min-width: var(--imgSize);
-    max-width: var(--imgSize);
-    align-items: center;
-    border: 4.5px solid var(--storyColor);
-    img{
-        height: 100%;
-        width: 100%;
-        transition: transform .4s;
-        filter: blur(.5px);
-        &:hover{
-            transform: scale(1.05); 
-            filter: none;
-        }
-        &:active{
-            transform: scale(1.25); 
-            filter: none;
-        }
-    }
+.storyButton {
+  display: flex;
+  margin: var(--distanceDefault);
+  border-radius: 50%;
+  overflow: hidden;
+  height: var(--imgSize);
+  min-width: var(--imgSize);
+  max-width: var(--imgSize);
+  align-items: center;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.storyBorders {
+  border: 4.5px solid var(--storyColor);
+}
+
+.applyEffects{
+  transition: transform 0.4s;
+  filter: blur(0.5px);
+  &:hover {
+    transform: scale(1.05);
+    filter: none;
+  }
+  &:active {
+    transform: scale(1.25);
+    filter: none;
+  }
 }

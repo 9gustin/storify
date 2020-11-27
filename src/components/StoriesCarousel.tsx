@@ -28,8 +28,6 @@ const StoriesCarousel: React.FC<Props> = ({ actualStoryGroup, stories, handleClo
         <div>
             <button onClick={close}><IconClose /></button>
             <IconPaginate type="prev" handleClick={prev} />
-            {/* {position}
-            {storiesLine && storiesLine.map(s => s.id)} */}
             <StoryView story={actualStory} />
             <IconPaginate type="next" handleClick={next} />
         </div>

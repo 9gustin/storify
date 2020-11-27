@@ -14,7 +14,7 @@ const StoriesLine: React.FC<Props> = ({ imgSize, stories, viewStory }) => {
             <IconPaginate type="prev" />
             <div className={styles.storiesLine}>
                 {stories && stories.map(story => (
-                    <StoryButton key={`StoryButton-${story.id}`} story={story} imgSize={imgSize} handleClick={viewStory}/>
+                    <StoryButton key={`StoryButton-${story.id}`} story={story} imgSize={imgSize} handleClick={viewStory} showBorders={true} withEffects={true}/>
                 ))}
             </div>
             <IconPaginate type="next" />
