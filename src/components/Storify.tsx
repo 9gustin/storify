@@ -1,18 +1,26 @@
-import React from 'react';
-import Story from '../models/Story';
+import React, { useState } from 'react';
+import StoryGroup from '../models/StoryGroup';
+import StoriesCarousel from './StoriesCarousel';
 import StorysLine from './StoriesLine';
+
 interface Props {
     imgSize?: string,
-    stories: Story[],
+    stories: StoryGroup[],
 }
 
 const Storify: React.FC<Props> = ({ imgSize, stories }) => {
+    const [viewingStory, setViewingStory] = useState<StoryGroup|null>(null);
+    if (!stories || stories.length < 1) return null;
+
+    const viewStory = (story:StoryGroup):void => setViewingStory(story);
+    const closeCarousel = ():void => setViewingStory(null);
+
     return (
         <>
             {
-                stories && stories.length > 0 ?
-                    <StorysLine imgSize={imgSize} stories={stories} />
-                    : ''
+                viewingStory ?
+                <StoriesCarousel stories={stories} handleClose={closeCarousel}/> :
+                <StorysLine imgSize={imgSize} stories={stories} viewStory={viewStory}/>
             }
         </>
     );

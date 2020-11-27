@@ -2,18 +2,19 @@ import React from 'react';
 import StoryButton from './StoryButton';
 import styles from '../styles/StoriesLine.module.scss';
 import IconPaginate from './IconPaginate';
-import Story from '../models/Story';
+import StoryGroup from '../models/StoryGroup';
 interface Props {
     imgSize?: string,
-    stories: Story[]
+    stories: StoryGroup[],
+    viewStory: Function,
 }
-const StoriesLine: React.FC<Props> = ({ imgSize, stories }) => {
+const StoriesLine: React.FC<Props> = ({ imgSize, stories, viewStory }) => {
     return (
         <div className={styles.storiesLineContainer}>
             <IconPaginate type="prev" />
             <div className={styles.storiesLine}>
                 {stories && stories.map(story => (
-                    <StoryButton key={`StoryButton-${story.id}`} story={story} imgSize={imgSize} />
+                    <StoryButton key={`StoryButton-${story.id}`} story={story} imgSize={imgSize} handleClick={viewStory}/>
                 ))}
             </div>
             <IconPaginate type="next" />
