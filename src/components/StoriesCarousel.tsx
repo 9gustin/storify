@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import useStoriesPaginator from '../hooks/useStoriesPaginator';
-import Story from '../models/Story';
 import StoryGroup from '../models/StoryGroup';
 import IconClose from './IconClose';
 import IconPaginate from './IconPaginate';
 import StoryView from './StoryView';
+import styles from '../styles/StoriesCarousel.module.scss';
+import Overlay from './Overlay';
 
 interface Props {
     actualStoryGroup: StoryGroup,
@@ -13,7 +14,7 @@ interface Props {
 }
 
 const StoriesCarousel: React.FC<Props> = ({ actualStoryGroup, stories, handleClose }) => {
-    const {actualStory, prev, next, start} = useStoriesPaginator({actualStoryGroup, stories});
+    const { actualStory, prev, next, start } = useStoriesPaginator({ actualStoryGroup, stories });
 
     const close = () => {
         handleClose();
@@ -25,12 +26,17 @@ const StoriesCarousel: React.FC<Props> = ({ actualStoryGroup, stories, handleClo
 
 
     return (
-        <div>
-            <button onClick={close}><IconClose /></button>
-            <IconPaginate type="prev" handleClick={prev} />
-            <StoryView story={actualStory} />
-            <IconPaginate type="next" handleClick={next} />
-        </div>
+        <>
+            <Overlay handleClick={close} />
+            <div className={styles.centerCarousel}>
+                <div className={styles.carouselContainer}>
+                    <button onClick={close} className={styles.closeButton}><IconClose /></button>
+                    <IconPaginate type="prev" handleClick={prev} />
+                    <StoryView story={actualStory} />
+                    <IconPaginate type="next" handleClick={next} />
+                </div>
+            </div>
+        </>
     );
 };
 
