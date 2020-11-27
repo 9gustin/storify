@@ -1,15 +1,37 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import useStoriesPaginator from '../hooks/useStoriesPaginator';
+import Story from '../models/Story';
 import StoryGroup from '../models/StoryGroup';
+import IconClose from './IconClose';
+import IconPaginate from './IconPaginate';
+import StoryView from './StoryView';
 
-interface Props{
+interface Props {
+    actualStoryGroup: StoryGroup,
     stories: StoryGroup[],
     handleClose: Function
 }
 
-const StoriesCarousel:React.FC<Props> = ({stories}) => {
+const StoriesCarousel: React.FC<Props> = ({ actualStoryGroup, stories, handleClose }) => {
+    const {actualStory, prev, next, start} = useStoriesPaginator({actualStoryGroup, stories});
+
+    const close = () => {
+        handleClose();
+    }
+
+    useEffect(() => {
+        start();
+    }, [])
+
+
     return (
         <div>
-            {stories.map(s => s.user.username)}
+            <button onClick={close}><IconClose /></button>
+            <IconPaginate type="prev" handleClick={prev} />
+            {/* {position}
+            {storiesLine && storiesLine.map(s => s.id)} */}
+            <StoryView story={actualStory} />
+            <IconPaginate type="next" handleClick={next} />
         </div>
     );
 };

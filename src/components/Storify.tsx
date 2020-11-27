@@ -19,7 +19,7 @@ const Storify: React.FC<Props> = ({ imgSize, stories }) => {
         <>
             {
                 viewingStory ?
-                <StoriesCarousel stories={stories} handleClose={closeCarousel}/> :
+                <StoriesCarousel stories={stories} actualStoryGroup={viewingStory} handleClose={closeCarousel}/> :
                 <StorysLine imgSize={imgSize} stories={stories} viewStory={viewStory}/>
             }
         </>

@@ -8,7 +8,8 @@
                 "imageUrl": "https://i.picsum.photos/id/627/400/400.jpg?hmac=LSCElVYrPG5IFocJL1Pi29YYSpykBK5r6G-EC_srdQM"
             },
             "imageUrl": "https://i.picsum.photos/id/681/400/900.jpg?hmac=_zRbtf1_q7UtCE9mf_bxaEtAcy7OHjNz2gOGFD8bTzo",
-            "createdAt": "2020-11-26T18:13:04.334Z"
+            "createdAt": "2020-11-26T18:13:04.334Z",
+            "viewed":true
         },
         {
             "id": "2",
@@ -17,8 +18,9 @@
                 "relevance": 1,
                 "imageUrl": "https://i.picsum.photos/id/627/400/400.jpg?hmac=LSCElVYrPG5IFocJL1Pi29YYSpykBK5r6G-EC_srdQM"
             },
-            "imageUrl": "https://picsum.photos/400/900",
-            "createdAt": "2020-11-26T19:13:04.334Z"
+            "imageUrl": "https://i.picsum.photos/id/174/400/900.jpg?hmac=6-ofC27E6qhVpMl_E0OD7ZsUlrCxnQNmzOJkD6zj7vU",
+            "createdAt": "2020-11-26T19:13:04.334Z",
+            "viewed":true
         },
         {
             "id": "3",
@@ -27,8 +29,9 @@
                 "relevance": 1,
                 "imageUrl": "https://i.picsum.photos/id/627/400/400.jpg?hmac=LSCElVYrPG5IFocJL1Pi29YYSpykBK5r6G-EC_srdQM"
             },
-            "imageUrl": "https://picsum.photos/400/900",
-            "createdAt": "2020-11-26T20:13:04.334Z"
+            "imageUrl": "https://i.picsum.photos/id/321/400/900.jpg?hmac=zdJQUydQC74V1pQVJJyPvf1tBwCLyfhFJDarJMb-5KQ",
+            "createdAt": "2020-11-26T20:13:04.334Z",
+            "viewed":false
         },
         {
             "id": "4",
@@ -37,8 +40,9 @@
                 "relevance": 1,
                 "imageUrl": "https://i.picsum.photos/id/627/400/400.jpg?hmac=LSCElVYrPG5IFocJL1Pi29YYSpykBK5r6G-EC_srdQM"
             },
-            "imageUrl": "https://picsum.photos/400/900",
-            "createdAt": "2020-11-26T22:13:04.334Z"
+            "imageUrl": "https://i.picsum.photos/id/1023/400/900.jpg?hmac=yVTo0fYImfmg_3cGORqtP-PS7cMWRrFqT-muYWUPz3c",
+            "createdAt": "2020-11-26T22:13:04.334Z",
+            "viewed":false
         },
         {
             "id": "5",
@@ -47,8 +51,9 @@
                 "relevance": 99,
                 "imageUrl": "https://i.picsum.photos/id/181/400/900.jpg?hmac=00LZUWpUq-lAl-_NOvv1S1FeQrcJ0OkNdY_nPeunHRg"
             },
-            "imageUrl": "https://picsum.photos/400/900",
-            "createdAt": "2020-11-26T23:13:04.334Z"
+            "imageUrl": "https://i.picsum.photos/id/515/400/900.jpg?hmac=ulwtfyiUB4D4VaUvDpsLHMhdvOzudoIakFltMQfBKaY",
+            "createdAt": "2020-11-26T23:13:04.334Z",
+            "viewed":false
         },
         {
             "id": "6",
@@ -57,8 +62,9 @@
                 "relevance": 1,
                 "imageUrl": "https://i.picsum.photos/id/181/400/900.jpg?hmac=00LZUWpUq-lAl-_NOvv1S1FeQrcJ0OkNdY_nPeunHRg"
             },
-            "imageUrl": "https://picsum.photos/400/900",
-            "createdAt": "2020-11-26T01:19:04.334Z"
+            "imageUrl": "https://i.picsum.photos/id/7/400/900.jpg?hmac=35spIjrU3DA27f666RqOASL40SnC2ZNR9QFo5iYIEPI",
+            "createdAt": "2020-11-26T01:19:04.334Z",
+            "viewed":false
         },
         {
             "id": "7",
@@ -68,7 +74,8 @@
                 "imageUrl": "https://i.picsum.photos/id/214/400/900.jpg?hmac=FNDbV4Xr_qRLG5vV0fb2_U-Kv1QxfHsVfWOpVxLz3Uk"
             },
             "imageUrl": "https://i.picsum.photos/id/997/400/900.jpg?hmac=fESGbrXwzuCIQdYvOdT7b0F-IRmqnDrHiotixeDcro4",
-            "createdAt": "2020-11-26T18:13:04.334Z"
+            "createdAt": "2020-11-26T18:13:04.334Z",
+            "viewed":false
         }
     ]
 }

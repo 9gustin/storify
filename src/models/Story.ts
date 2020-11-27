@@ -4,5 +4,6 @@ export default interface Story{
     user: User,
     id: string,
     imageUrl: string,
-    createdAt: Date
+    createdAt: Date,
+    viewed: boolean
 }
