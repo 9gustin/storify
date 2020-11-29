@@ -8,7 +8,7 @@
                 "imageUrl": "https://i.picsum.photos/id/627/400/400.jpg?hmac=LSCElVYrPG5IFocJL1Pi29YYSpykBK5r6G-EC_srdQM"
             },
             "imageUrl": "https://i.picsum.photos/id/681/400/900.jpg?hmac=_zRbtf1_q7UtCE9mf_bxaEtAcy7OHjNz2gOGFD8bTzo",
-            "createdAt": "2020-11-26T18:13:04.334Z",
+            "createdAt": "2020-11-29T11:13:04.334Z",
             "viewed":true
         },
         {
@@ -19,7 +19,7 @@
                 "imageUrl": "https://i.picsum.photos/id/627/400/400.jpg?hmac=LSCElVYrPG5IFocJL1Pi29YYSpykBK5r6G-EC_srdQM"
             },
             "imageUrl": "https://i.picsum.photos/id/174/400/900.jpg?hmac=6-ofC27E6qhVpMl_E0OD7ZsUlrCxnQNmzOJkD6zj7vU",
-            "createdAt": "2020-11-26T19:13:04.334Z",
+            "createdAt": "2020-11-29T00:00:44.334-03:00",
             "viewed":true
         },
         {
@@ -30,7 +30,7 @@
                 "imageUrl": "https://i.picsum.photos/id/627/400/400.jpg?hmac=LSCElVYrPG5IFocJL1Pi29YYSpykBK5r6G-EC_srdQM"
             },
             "imageUrl": "https://i.picsum.photos/id/321/400/900.jpg?hmac=zdJQUydQC74V1pQVJJyPvf1tBwCLyfhFJDarJMb-5KQ",
-            "createdAt": "2020-11-26T20:13:04.334Z",
+            "createdAt": "2020-11-29T09:27:04.334Z",
             "viewed":false
         },
         {
@@ -48,7 +48,7 @@
             "id": "5",
             "user": {
                 "username": "9gustinardo",
-                "relevance": 99,
+                "relevance": 1,
                 "imageUrl": "https://i.picsum.photos/id/181/400/900.jpg?hmac=00LZUWpUq-lAl-_NOvv1S1FeQrcJ0OkNdY_nPeunHRg"
             },
             "imageUrl": "https://i.picsum.photos/id/515/400/900.jpg?hmac=ulwtfyiUB4D4VaUvDpsLHMhdvOzudoIakFltMQfBKaY",

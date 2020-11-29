@@ -2,17 +2,16 @@ import { useEffect, useState } from "react";
 import Story from "../models/Story";
 import StoryGroup from "../models/StoryGroup";
 
-interface Props{
+interface Props {
     stories: StoryGroup[],
     actualStoryGroup: StoryGroup
 }
 
-const useStoriesPaginator = ({stories, actualStoryGroup}:Props) => {
+const useStoriesPaginator = ({ stories, actualStoryGroup }: Props) => {
     const [actualStory, setActualStory] = useState<Story | null>(null);
     const [storiesLine, setStoriesLine] = useState<Story[] | null>(null);
     const [position, setPosition] = useState<number>(0);
 
-    //TODO: Checkear orden por fecha(ver mas antiguas primero)
     useEffect(() => {
         let storyToView = storiesLine && storiesLine.find(s => (s.user.username === actualStoryGroup.user.username));
         setActualStory(storyToView ?? null);
@@ -22,7 +21,8 @@ const useStoriesPaginator = ({stories, actualStoryGroup}:Props) => {
 
     const start = () => {
         setStoriesLine(stories
-            .map(s => s.stories)
+            //In any one story group order the stories by date, to show more older first.
+            .map(s => s.stories.sort((a, b) => (a.createdAt > b.createdAt) ? 1 : -1))
             .reduce((a, b) => [...a, ...b]));
     }
 
@@ -39,7 +39,7 @@ const useStoriesPaginator = ({stories, actualStoryGroup}:Props) => {
     const next = () => movePosition(true);
 
 
-    return {actualStory, prev, next, start};
+    return { actualStory, prev, next, start };
 }
 
 export default useStoriesPaginator;

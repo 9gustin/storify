@@ -1,5 +1,5 @@
 import React from 'react';
-import Story from '../models/Story';
+import Story, { createdAtToString } from '../models/Story';
 import StoryButton from './StoryButton';
 import styles from '../styles/StoryView.module.scss';
 import IconClose from './IconClose';
@@ -19,6 +19,9 @@ const StoryView: React.FC<Props> = ({ story, handleClose, viewProfileCallback })
                 <span className={styles.profileContainer}>
                     <StoryButton story={story} handleClick={viewProfile} imgSize="2.5rem" />
                     <button className={styles.profileName} onClick={() => { viewProfile(); }}>{story?.user?.username}</button>
+                    <span>
+                        {story && createdAtToString(story)}
+                    </span>
                 </span>
                 <button onClick={() => {handleClose && handleClose();}} className={styles.closeButton}><IconClose /></button>
             </div>

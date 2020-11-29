@@ -17,12 +17,19 @@ const StoryReducer = (state: any, action: Action) => {
     }
 }
 
+/**
+ * The story groups has ordered first by profile relevance from min to max, 1 is most important than 100
+ * and then by created date from max to min, more recent first
+ * 
+ * @param stories 
+ */
+//
 const sortStories = (stories: Story[]): Story[] => {
     return stories.sort((a, b) => {
         if (a.user?.relevance > b.user?.relevance) return 1;
         if (a.user?.relevance < b.user?.relevance) return -1;
-        if (a.createdAt > b.createdAt) return 1;
-        if (a.createdAt < b.createdAt) return -1;
+        if (a.createdAt < b.createdAt) return 1;
+        if (a.createdAt > b.createdAt) return -1;
 
         return -1;
     });
