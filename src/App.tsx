@@ -6,10 +6,10 @@ import useStorify from './hooks/useStorify';
 import jsonStories from './data/stories.json';
 
 function App() {
-  const { stories,setStories } = useStorify(jsonStories.stories);
+  const { stories, setStories } = useStorify(jsonStories.stories);
 
   return (
-    <Storify stories={stories}/>
+    <Storify stories={stories} viewProfileCallback={(user:any) => {console.log(user)}}/>
   );
 }
 

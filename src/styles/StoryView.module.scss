@@ -14,10 +14,24 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    height: 80vh;
+    overflow: hidden;
     .storyImage{
         width: 95%; 
     }
 }
 
-.storyView{
+.topOptions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.closeButton{
+    z-index: var(--normalZIndex);
+    margin-right: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: var(--iconFontSize);
 }

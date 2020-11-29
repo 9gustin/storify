@@ -1,5 +1,5 @@
 .iconPaginate {
-  z-index: 10;
+  z-index: var(--iconsAbsoluteZIndex);
   position: absolute;
   top: 0;
   bottom: 0;

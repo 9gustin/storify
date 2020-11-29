@@ -1,4 +1,5 @@
 .storyButton {
+  z-index: var(--iconsAbsoluteZIndex);
   display: flex;
   margin: var(--distanceDefault);
   border-radius: 50%;

@@ -10,7 +10,7 @@
     position: relative;
     max-height: 90vh;
     overflow: hidden;
-    z-index: 10;
+    z-index: var(--normalZIndex);
 }
 @media (max-width: 500px) {
     .carouselContainer{
@@ -18,10 +18,3 @@
     }
 }
 
-
-.closeButton{
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: var(--iconFontSize);
-}

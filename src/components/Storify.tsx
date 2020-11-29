@@ -6,9 +6,10 @@ import StorysLine from './StoriesLine';
 interface Props {
     imgSize?: string,
     stories: StoryGroup[],
+    viewProfileCallback?: Function
 }
 
-const Storify: React.FC<Props> = ({ imgSize, stories }) => {
+const Storify: React.FC<Props> = ({ imgSize, stories, viewProfileCallback }) => {
     const [viewingStory, setViewingStory] = useState<StoryGroup|null>(null);
     if (!stories || stories.length < 1) return null;
 
@@ -19,7 +20,7 @@ const Storify: React.FC<Props> = ({ imgSize, stories }) => {
         <>
             {
                 viewingStory ?
-                <StoriesCarousel stories={stories} actualStoryGroup={viewingStory} handleClose={closeCarousel}/> :
+                <StoriesCarousel stories={stories} actualStoryGroup={viewingStory} handleClose={closeCarousel} viewProfileCallback={viewProfileCallback}/> :
                 <StorysLine imgSize={imgSize} stories={stories} viewStory={viewStory}/>
             }
         </>
