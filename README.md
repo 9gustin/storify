@@ -1,4 +1,5 @@
 # storify :D
+Stories anywhere
 
 v1:
 NPM package that show stories in a line(ordered by relevance and date)
