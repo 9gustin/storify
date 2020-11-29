@@ -26,7 +26,7 @@ const StoriesCarousel: React.FC<Props> = ({ actualStoryGroup, stories, handleClo
 
 
     return (
-        <>
+        <React.Fragment>
             <Overlay handleClick={close} />
             <div className={styles.centerCarousel}>
                 <div className={styles.carouselContainer}>
@@ -35,7 +35,7 @@ const StoriesCarousel: React.FC<Props> = ({ actualStoryGroup, stories, handleClo
                     <IconPaginate type="next" handleClick={next} />
                 </div>
             </div>
-        </>
+        </React.Fragment>
     );
 };
 

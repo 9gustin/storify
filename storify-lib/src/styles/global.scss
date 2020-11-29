@@ -5,8 +5,8 @@
 	--iconFontSize: 1.5rem;
 	--storyWidth: 500px;
 	--overlayZIndex: 2;
-	--iconsAbsoluteZIndex: 3;
-	--normalZIndex: 4;
+	--iconsAbsoluteZIndex: 4;
+	--normalZIndex: 3;
 }
 
 button{
@@ -18,3 +18,10 @@ button{
 	cursor: pointer;
 	outline: inherit;
 }
+
+@import './IconPaginate.module.scss';
+@import './Overlay.module.scss';
+@import './StoriesCarousel.module.scss';
+@import './StoriesLine.module.scss';
+@import './StoryButton.module.scss';
+@import './StoryView.module.scss';

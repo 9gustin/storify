@@ -1,8 +1,7 @@
 import React from 'react';
-import 'normalize.css';
-import './styles/global.scss';
-import Storify from './components/Storify';
-import useStorify from './hooks/useStorify';
+
+import {Storify, useStorify} from 'storify';
+import 'storify/dist/index.css'
 import jsonStories from './data/stories.json';
 
 function App() {

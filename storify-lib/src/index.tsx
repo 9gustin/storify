@@ -1,10 +1,6 @@
-import * as React from 'react'
-import styles from './styles.module.css'
+import 'normalize.css';
+import './styles/global.scss';
+import Storify from './components/Storify';
+import useStorify from './hooks/useStorify';
 
-interface Props {
-  text: string
-}
-
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example Component: {text}</div>
-}
+export {Storify, useStorify};

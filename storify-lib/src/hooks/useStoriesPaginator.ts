@@ -14,7 +14,7 @@ const useStoriesPaginator = ({ stories, actualStoryGroup }: Props) => {
 
     useEffect(() => {
         let storyToView = storiesLine && storiesLine.find(s => (s.user.username === actualStoryGroup.user.username));
-        setActualStory(storyToView ?? null);
+        setActualStory(storyToView || null);
 
         setPosition(storiesLine ? storiesLine.findIndex(s => s.id === storyToView?.id) : 0);
     }, [storiesLine])
