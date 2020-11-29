@@ -14,12 +14,12 @@ const StoryView: React.FC<Props> = ({ story, handleClose, viewProfileCallback })
     const viewProfile = () => viewProfileCallback && viewProfileCallback(story?.user);
 
     return (
-        <div className={styles.storyView}>
+        <div>
             <div className={styles.topOptions}>
                 <span className={styles.profileContainer}>
                     <StoryButton story={story} handleClick={viewProfile} imgSize="2.5rem" />
                     <button className={styles.profileName} onClick={() => { viewProfile(); }}>{story?.user?.username}</button>
-                    <span>
+                    <span className={styles.spanCreatedDiff}>
                         {story && createdAtToString(story)}
                     </span>
                 </span>
