@@ -8,7 +8,7 @@ function App() {
   const { stories, setStories } = useStorify(jsonStories.stories);
 
   return (
-    <Storify stories={stories} viewProfileCallback={(user:any) => {console.log(user)}}/>
+    <Storify storyBorderColor="blue" stories={stories} viewProfileCallback={(user:any) => {console.log(user)}}/>
   );
 }
 

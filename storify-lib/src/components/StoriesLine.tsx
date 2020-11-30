@@ -7,14 +7,15 @@ interface Props {
     imgSize?: string,
     stories: StoryGroup[],
     viewStory: Function,
+    storyBorderColor?: string
 }
-const StoriesLine: React.FC<Props> = ({ imgSize, stories, viewStory }) => {
+const StoriesLine: React.FC<Props> = ({ imgSize, stories, viewStory, storyBorderColor }) => {
     return (
         <div className={styles.storiesLineContainer}>
             <IconPaginate type="prev" />
             <div className={styles.storiesLine}>
                 {stories && stories.map(story => (
-                    <StoryButton key={`StoryButton-${story.id}`} story={story} imgSize={imgSize} handleClick={viewStory} showBorders={true} withEffects={true}/>
+                    <StoryButton key={`StoryButton-${story.id}`} story={story} imgSize={imgSize} handleClick={viewStory} showBorders={true} storyBorderColor={storyBorderColor} withEffects={true}  />
                 ))}
             </div>
             <IconPaginate type="next" />

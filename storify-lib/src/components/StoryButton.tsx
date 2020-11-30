@@ -8,12 +8,14 @@ interface Props {
     imgSize?: string,
     showBorders?: boolean,
     withEffects?: boolean,
+    storyBorderColor?:string,
     handleClick: Function
 }
-const StoryButton: React.FC<Props> = ({ story, imgSize = "5.5rem", showBorders, handleClick, withEffects }) => {
+const StoryButton: React.FC<Props> = ({ story, imgSize = "5.5rem", showBorders, handleClick, withEffects, storyBorderColor }) => {
 
     useEffect(() => {
         document.body.style.setProperty("--imgSize", imgSize)
+        storyBorderColor && document.body.style.setProperty("--storyBorderColor", storyBorderColor)
     }, [])
 
     return (
