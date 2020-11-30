@@ -6,13 +6,13 @@ stories for you react app
 
 NPM package that show stories in a line(ordered by relevance and date)
 
-&nbsp;
+
 
 ## URL
 
 https://www.npmjs.com/package/@9gustin/storify-react
 
-&nbsp;
+
 
 ## How to use
 
@@ -43,7 +43,7 @@ function App() {
 export default App;
 ```
 
-&nbsp;
+
 
 ### Detailed
 
@@ -55,11 +55,11 @@ import {Storify, useStorify} from '@9gustin/storify-react';
 
 ### useStorify (Custom Hook)
 
-| Param          | Type    | Description                                          |
-| -------------- | ------- | ---------------------------------------------------- |
-| initialStories | Story[] | represent the list of stories to start the component |
+| Param          | Type    | Description                                               |
+| -------------- | ------- | --------------------------------------------------------- |
+| initialStories | Story[] | represent the list of stories to start the state variable |
 
-&nbsp;
+
 
 | Return     | Type          | Description                                                                                          |
 | ---------- | ------------- | ---------------------------------------------------------------------------------------------------- |
@@ -67,7 +67,7 @@ import {Storify, useStorify} from '@9gustin/storify-react';
 | addStories | Function:void | that function give you the possibility to add stories, and thats rendered in the Storify component   |
 | setStories | Function:void | that function give you the possibility to set the list of stories                                    |
 
-&nbsp;
+
 
 Use:
 
@@ -84,7 +84,7 @@ Use:
 | viewProfileCallback | Function:User | the function that would be called when the user make click to the user             |
 | storyBorderColor    | string        | represent the color of story buttons borders, that receive the border-color value. |
 
-&nbsp;
+
 
 Use:
 
@@ -94,7 +94,7 @@ Use:
 
 ### Models
 
-&nbsp;
+
 
 Story
 
@@ -105,7 +105,7 @@ Story
 | createdAt | string | the creation date of story |
 | imageUrl  | number | the url of story image     |
 
-&nbsp;
+
 
 User
 
@@ -115,7 +115,7 @@ User
 | imageUrl  | string | the url of user profile image                          |
 | relevance | number | the stories are ordered firstly for the user relevance |
 
-&nbsp;
+
 
 ### Import styles
 
