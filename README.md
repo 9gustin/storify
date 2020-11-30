@@ -1,12 +1,15 @@
 # storify :D
 Stories anywhere
 
-v1:
+## v1:
 NPM package that show stories in a line(ordered by relevance and date)
 
-
-Pending:
+### Pending:
 - Custom color to story border(in line)
+- Readme about how to use
+
+
+## Pending(future releases):
 - Next story automatically, with time/progress bar 
 - Save actual user in state
 - take response to stories, with a custom callback
