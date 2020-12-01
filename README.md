@@ -126,3 +126,9 @@ import '@9gustin/storify-react/dist/index.css'
 ## License
 
 MIT © [9gustin](https://github.com/9gustin)
+
+#### To practice
+- CSS modules(scss)
+- Typescript
+- Custom hooks
+- Create react library
