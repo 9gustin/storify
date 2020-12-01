@@ -2,6 +2,9 @@
 
 stories for you react app
 
+[![NPM](https://img.shields.io/npm/v/storify.svg)](https://www.npmjs.com/package/storify) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+
 ## v1:
 
 NPM package that show stories in a line(ordered by relevance and date)
@@ -18,7 +21,7 @@ https://www.npmjs.com/package/@9gustin/storify-react
 
 Add package to your aplication
 
-```
+``` bash
 npm i @9gustin/storify-react
 ```
 
@@ -130,3 +133,7 @@ import '@9gustin/storify-react/dist/index.css'
 - take response to stories, with a custom callback
 - Button "Add story" with a custom callback
 - Custom stories(colors, to group of persons)
+
+## License
+
+MIT © [9gustin](https://github.com/9gustin)
