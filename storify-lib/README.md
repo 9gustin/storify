@@ -110,11 +110,6 @@ The stories (in the timeline of stories are ordered by user's relevance, and aft
 import '@9gustin/storify-react/dist/index.css'
 ```
 
-
-## v1: to fix
-- The time of image loading (show a icon)
-- Scroll stories in pc
-
 ## Future releases:
 
 - Next story automatically, with time/progress bar

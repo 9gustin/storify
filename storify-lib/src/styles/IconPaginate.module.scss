@@ -1,5 +1,4 @@
 .iconPaginate {
-  z-index: var(--iconsAbsoluteZIndex);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -14,6 +13,7 @@
     right: var(--distanceDefault)
   }
   button{
+    z-index: var(--iconsAbsoluteZIndex);
     border-radius: 50%;
     width: 1.5rem;
     height: 1.5rem;
