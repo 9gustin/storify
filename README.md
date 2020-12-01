@@ -112,8 +112,8 @@ import '@9gustin/storify-react/dist/index.css'
 
 
 ## v1: to fix
-The time of image loading (show a icon)
-Scroll stories in pc
+- The time of image loading (show a icon)
+- Scroll stories in pc
 
 ## Future releases:
 
